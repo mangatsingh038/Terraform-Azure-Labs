@@ -20,6 +20,12 @@ sub-nets = {
         virtual_network_name="network_zone"
         address_prefixes=["192.168.1.0/24"]
     }
+        snet2={
+        name="vm_subnet2"
+        resource_group_name="fateh_rg"
+        virtual_network_name="network_zone"
+        address_prefixes=["192.168.2.0/24"]
+    }
 }
     pips={
     p1={
