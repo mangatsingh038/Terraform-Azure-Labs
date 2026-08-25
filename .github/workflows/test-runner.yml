@@ -1,15 +1,19 @@
 name: Self Hosted Runner Test
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - feature/new-code
 
 jobs:
   test-runner:
-
     runs-on: self-hosted
 
     steps:
-      - name: Check Runner
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Test Runner
         run: echo "Hello from my self-hosted runner!"
 
       - name: Check Windows Machine
