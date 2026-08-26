@@ -13,8 +13,8 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-     - name: Test Runner
-  run: echo "Hello from my self-hosted runner - TEST 2!"
+      - name: Test Runner
+        run: echo "Hello from my self-hosted runner!"
 
       - name: Check Windows Machine
         run: |
